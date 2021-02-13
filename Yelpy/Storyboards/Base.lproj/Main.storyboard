@@ -29,10 +29,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-kN-XKo">
-                                                    <rect key="frame" x="237" y="5" width="167" height="140"/>
+                                                    <rect key="frame" x="246.5" y="5" width="157.5" height="140"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="140" id="MYA-HH-1ie"/>
-                                                        <constraint firstAttribute="width" constant="167" id="Osm-Ix-Ymo"/>
+                                                        <constraint firstAttribute="width" secondItem="VbM-kN-XKo" secondAttribute="height" multiplier="1.25:1" id="s96-Nr-Dfi"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRA-EF-puw">
@@ -43,7 +42,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="VbM-kN-XKo" firstAttribute="width" secondItem="HeS-QP-M3I" secondAttribute="width" multiplier="0.38" id="Cj0-zX-PM3"/>
                                                 <constraint firstAttribute="trailing" secondItem="VbM-kN-XKo" secondAttribute="trailing" constant="10" id="IGN-Mo-cIf"/>
+                                                <constraint firstItem="VbM-kN-XKo" firstAttribute="centerY" secondItem="HeS-QP-M3I" secondAttribute="centerY" id="KAr-e8-kK8"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="pRA-EF-puw" secondAttribute="bottom" constant="5" id="bd9-W9-oy0"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VbM-kN-XKo" secondAttribute="bottom" constant="5" id="khz-0T-7DA"/>
                                                 <constraint firstItem="pRA-EF-puw" firstAttribute="leading" secondItem="HeS-QP-M3I" secondAttribute="leadingMargin" id="oo3-1y-vtQ"/>
