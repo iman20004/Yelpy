@@ -3,8 +3,6 @@
 Yelpy is an iOS app that allows users to browse restaurants from the [Yelp Fusion APIs](https://www.yelp.com/fusion#).
 
 ### User Stories
-
-#### REQUIRED (10pts)
 - [x] User can view and scroll through a list of Yelp restaurants.
 - [x] User can view the restaurant image and name.
 - [x] (2pt) User can view the app on various device sizes and orientations.
