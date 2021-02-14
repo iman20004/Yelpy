@@ -11,17 +11,12 @@ import AlamofireImage
 
 class RestaurantsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
-    
-    // ––––– TODO: Add storyboard Items (i.e. tableView + Cell + configurations for Cell + cell outlets)
-    // ––––– TODO: Next, place TableView outlet here
     @IBOutlet weak var tableView: UITableView!
     
-    // –––––– TODO: Initialize restaurantsArray
+    // Initialize restaurantsArray
     var restaurantsArray: [[String:Any?]] = []
     
     
-    // ––––– TODO: Add tableView datasource + delegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,12 +24,11 @@ class RestaurantsViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.dataSource = self
         
         getAPIData()
-        
     }
     
 
     
-    // ––––– TODO: Get data from API helper and retrieve restaurants
+    // Get data from API helper and retrieve restaurants
     func getAPIData(){
         API.getRestaurants() { (restaurants) in
             guard let restaurants = restaurants else {
@@ -47,19 +41,21 @@ class RestaurantsViewController: UIViewController, UITableViewDataSource, UITabl
 
     
     
-    
+    // Get number of cells/restaurants
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Create a cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell") as! RestaurantCell
-        
+        // Get restaurants one by one
         let restaurant = restaurantsArray[indexPath.row]
         
+        // Set cell Label as name of restaurant
         cell.restaurantLabel.text = restaurant["name"] as? String ?? ""
         
-        
+        // Add restaurant image using AlamofireImage
         if let imageUrlString = restaurant["image_url"] as? String {
             let imageUrl = URL(string: imageUrlString)
             cell.restaurantImage.af.setImage(withURL: imageUrl!)
