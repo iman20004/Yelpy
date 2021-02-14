@@ -8,7 +8,7 @@ Yelpy is an iOS app that allows users to browse restaurants from the [Yelp Fusio
 - [x] User can view the app on various device sizes and orientations.
 
 ### App Walkthrough GIF
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="http://g.recordit.co/9fGvLTSCkZ.gif" width=250><br>
 
 ### Notes
 Lab Work (Week 1)
