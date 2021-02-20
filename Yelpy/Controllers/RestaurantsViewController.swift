@@ -14,7 +14,7 @@ class RestaurantsViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var tableView: UITableView!
     
     // Initialize restaurantsArray
-    var restaurantsArray: [[String:Any?]] = []
+    var restaurantsArray: [Restaurant] = []
     
     
     override func viewDidLoad() {
@@ -52,18 +52,20 @@ class RestaurantsViewController: UIViewController, UITableViewDataSource, UITabl
         // Get restaurants one by one
         let restaurant = restaurantsArray[indexPath.row]
         
-        // Set cell Label as name of restaurant
-        cell.restaurantLabel.text = restaurant["name"] as? String ?? ""
-        
-        // Add restaurant image using AlamofireImage
-        if let imageUrlString = restaurant["image_url"] as? String {
-            let imageUrl = URL(string: imageUrlString)
-            cell.restaurantImage.af.setImage(withURL: imageUrl!)
-        }
-        
+        cell.r = restaurant
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        
+        if let indexPath = tableView.indexPath(for: cell){
+            let r = restaurantsArray[indexPath.row]
+            let detailViewController = segue.destination as! RestaurantDetailViewController
+            detailViewController.r = r
+        }
+        
+    }
     
     
 }
