@@ -22,10 +22,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantCell" id="qdE-od-sgw" customClass="RestaurantCell" customModule="Yelpy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="173"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="172.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qdE-od-sgw" id="HeS-QP-M3I">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="173"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="172.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-kN-XKo">
@@ -35,7 +35,7 @@
                                                         <constraint firstAttribute="width" constant="156" id="XdY-tH-ZPt"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-9G-y2h">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDB-9G-y2h">
                                                     <rect key="frame" x="8" y="48" width="234" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -43,7 +43,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6D9-iT-HA9">
                                                     <rect key="frame" x="8" y="104" width="214" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -83,7 +83,7 @@
                                                 <constraint firstItem="6D9-iT-HA9" firstAttribute="leading" secondItem="HeS-QP-M3I" secondAttribute="leadingMargin" constant="8" id="ZSF-ob-LAe"/>
                                                 <constraint firstAttribute="trailing" secondItem="VbM-kN-XKo" secondAttribute="trailing" constant="8" id="aoy-hX-ccZ"/>
                                                 <constraint firstItem="aDB-9G-y2h" firstAttribute="top" secondItem="pRA-EF-puw" secondAttribute="bottom" constant="4" id="bd9-W9-oy0"/>
-                                                <constraint firstItem="aDB-9G-y2h" firstAttribute="leading" secondItem="HeS-QP-M3I" secondAttribute="leading" constant="8" id="eiB-30-E2f"/>
+                                                <constraint firstItem="aDB-9G-y2h" firstAttribute="leading" secondItem="HeS-QP-M3I" secondAttribute="leadingMargin" constant="8" id="eiB-30-E2f"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="6D9-iT-HA9" secondAttribute="bottom" constant="20" id="esk-2j-mpm"/>
                                                 <constraint firstItem="VbM-kN-XKo" firstAttribute="leading" secondItem="aDB-9G-y2h" secondAttribute="trailing" constant="8" id="jH2-FL-hsx"/>
                                                 <constraint firstItem="pRA-EF-puw" firstAttribute="leading" secondItem="HeS-QP-M3I" secondAttribute="leadingMargin" constant="8" id="oo3-1y-vtQ"/>
